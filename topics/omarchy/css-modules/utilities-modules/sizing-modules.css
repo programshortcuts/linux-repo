@@ -16,6 +16,14 @@ main.main-container.collapsed {
     --lesson-width: 100%;
 }
 
+@media (width > 770px) {
+    main.main-container:not(.collapsed) {
+        --sidebar-width: 20%;
+        /* Fill the remaining 80% column, including the lesson controls. */
+        --lesson-width: 100%;
+    }
+}
+
 img {
     max-height: 200px;
 }
